@@ -1,0 +1,738 @@
+{
+  "grille_audit": {
+    "titre": "GRILLE D'AUDIT - QUALITE LOGISTIQUE DES LIVRAISONS FOURNISSEURS - STELLANTIS",
+    "informations_generales": {
+      "code_route": "Code route :",
+      "cofor_audite": "COFOR (hybride/combiné) audité :",
+      "num_el_bl": "N° d'EL / BL : ",
+      "references_auditees": "Référence(s) auditée(s) :",
+      "matricule": "Matricule :",
+      "nom": null,
+      "date": "DATE :"
+    },
+    "colonnes_saisie": [
+      "Code Anomalie Amadeus",
+      "UM",
+      "UC",
+      "UMS",
+      "BL",
+      "AVIEXP"
+    ],
+    "anomalies": [
+      {
+        "categorie": null,
+        "description": "Multi BL",
+        "chapitre": "Chap H §2.4",
+        "code_amadeus": 136,
+        "points_controles": {
+          "Code Anomalie Amadeus": true,
+          "UM": true,
+          "UC": true,
+          "UMS": true,
+          "BL": true,
+          "AVIEXP": true
+        }
+      },
+      {
+        "categorie": null,
+        "description": "Manque BL",
+        "chapitre": "Chap H §2.4",
+        "code_amadeus": 136,
+        "points_controles": {
+          "Code Anomalie Amadeus": true,
+          "UM": true,
+          "UC": true,
+          "UMS": true,
+          "BL": true,
+          "AVIEXP": true
+        }
+      },
+      {
+        "categorie": null,
+        "description": "BL non conforme",
+        "chapitre": "Chap H §2.4",
+        "code_amadeus": 136,
+        "points_controles": {
+          "Code Anomalie Amadeus": true,
+          "UM": true,
+          "UC": true,
+          "UMS": true,
+          "BL": true,
+          "AVIEXP": true
+        }
+      },
+      {
+        "categorie": null,
+        "description": "Manque AVIEXP / saisie manuelle",
+        "chapitre": "Chap H §2.3",
+        "code_amadeus": 141,
+        "points_controles": {
+          "Code Anomalie Amadeus": true,
+          "UM": true,
+          "UC": true,
+          "UMS": true,
+          "BL": true,
+          "AVIEXP": true
+        }
+      },
+      {
+        "categorie": null,
+        "description": "Incohérence entre la constitution physique de la palette et la constitution dans le message EDI (verification fiche palette hétérogène ou sur les fiches suiveuses)",
+        "chapitre": "Chap H §2.3",
+        "code_amadeus": 113,
+        "points_controles": {
+          "Code Anomalie Amadeus": true,
+          "UM": true,
+          "UC": true,
+          "UMS": true,
+          "BL": true,
+          "AVIEXP": true
+        }
+      },
+      {
+        "categorie": null,
+        "description": "Incohérence entre code emballage fiche suiveuse et l'emballage livré.",
+        "chapitre": null,
+        "code_amadeus": 113,
+        "points_controles": {
+          "Code Anomalie Amadeus": true,
+          "UM": true,
+          "UC": true,
+          "UMS": true,
+          "BL": true,
+          "AVIEXP": true
+        }
+      },
+      {
+        "categorie": null,
+        "description": "Numéro de BL sur la CMR hors CRL",
+        "chapitre": "Chap C §3 pt 6",
+        "code_amadeus": 136,
+        "points_controles": {
+          "Code Anomalie Amadeus": true,
+          "UM": true,
+          "UC": true,
+          "UMS": true,
+          "BL": true,
+          "AVIEXP": true
+        }
+      },
+      {
+        "categorie": "Fuite de huile de la remorque",
+        "description": "Code routage avec tranche dépassée",
+        "chapitre": null,
+        "code_amadeus": 138,
+        "points_controles": {
+          "Code Anomalie Amadeus": true,
+          "UM": true,
+          "UC": true,
+          "UMS": true,
+          "BL": true,
+          "AVIEXP": true
+        }
+      },
+      {
+        "categorie": "Fuite de huile de la remorque",
+        "description": "Chargement non conforme",
+        "chapitre": null,
+        "code_amadeus": 131,
+        "points_controles": {
+          "Code Anomalie Amadeus": true,
+          "UM": true,
+          "UC": true,
+          "UMS": true,
+          "BL": true,
+          "AVIEXP": true
+        }
+      },
+      {
+        "categorie": "Température de stockage non respectée",
+        "description": "Incohérence entre la constitution physique de la LIVRAISON et la constitution dans le message EDI ",
+        "chapitre": null,
+        "code_amadeus": 138,
+        "points_controles": {
+          "Code Anomalie Amadeus": true,
+          "UM": true,
+          "UC": true,
+          "UMS": true,
+          "BL": true,
+          "AVIEXP": true
+        }
+      },
+      {
+        "categorie": "ETIQUETAGE",
+        "description": "Etiquette UM non visible au déchargement par le cariste (pour les flux direct)",
+        "chapitre": "Chap J §5",
+        "code_amadeus": 122,
+        "points_controles": {
+          "Code Anomalie Amadeus": true,
+          "UM": true,
+          "UC": true,
+          "UMS": true,
+          "BL": true,
+          "AVIEXP": true
+        }
+      },
+      {
+        "categorie": "ETIQUETAGE",
+        "description": "Etiquette UM et UC mal positionnée ou absente",
+        "chapitre": "Chap J §5",
+        "code_amadeus": 123,
+        "points_controles": {
+          "Code Anomalie Amadeus": true,
+          "UM": true,
+          "UC": true,
+          "UMS": true,
+          "BL": true,
+          "AVIEXP": true
+        }
+      },
+      {
+        "categorie": "ETIQUETAGE",
+        "description": "Mauvais format étiquette (ETI9 Galia)",
+        "chapitre": "Chap H Annexe H-VI",
+        "code_amadeus": 123,
+        "points_controles": {
+          "Code Anomalie Amadeus": true,
+          "UM": true,
+          "UC": true,
+          "UMS": true,
+          "BL": true,
+          "AVIEXP": true
+        }
+      },
+      {
+        "categorie": "ETIQUETAGE",
+        "description": "Manque étiquette(s) \"VIDE\" (sur bacs vides)",
+        "chapitre": "Chap J §2.2",
+        "code_amadeus": 123,
+        "points_controles": {
+          "Code Anomalie Amadeus": true,
+          "UM": true,
+          "UC": true,
+          "UMS": true,
+          "BL": true,
+          "AVIEXP": true
+        }
+      },
+      {
+        "categorie": "ETIQUETAGE",
+        "description": "Etiquette collée sur emballage durable",
+        "chapitre": "Chap J §5",
+        "code_amadeus": 126,
+        "points_controles": {
+          "Code Anomalie Amadeus": true,
+          "UM": true,
+          "UC": true,
+          "UMS": true,
+          "BL": true,
+          "AVIEXP": true
+        }
+      },
+      {
+        "categorie": "ETIQUETAGE",
+        "description": "Plusieurs étiquettes (UC) : double etiquetage",
+        "chapitre": "Chap J §5",
+        "code_amadeus": 124,
+        "points_controles": {
+          "Code Anomalie Amadeus": true,
+          "UM": true,
+          "UC": true,
+          "UMS": true,
+          "BL": true,
+          "AVIEXP": true
+        }
+      },
+      {
+        "categorie": "ETIQUETAGE",
+        "description": "destinataire absent ou erroné (sur étiquette UM)",
+        "chapitre": "Chap H §2.5.2",
+        "code_amadeus": 122,
+        "points_controles": {
+          "Code Anomalie Amadeus": true,
+          "UM": true,
+          "UC": true,
+          "UMS": true,
+          "BL": true,
+          "AVIEXP": true
+        }
+      },
+      {
+        "categorie": "ETIQUETAGE",
+        "description": "Expéditeur absent ou erroné (sur étiquette UM)",
+        "chapitre": "Chap H §2.5.2",
+        "code_amadeus": 122,
+        "points_controles": {
+          "Code Anomalie Amadeus": true,
+          "UM": true,
+          "UC": true,
+          "UMS": true,
+          "BL": true,
+          "AVIEXP": true
+        }
+      },
+      {
+        "categorie": "ETIQUETAGE",
+        "description": "Point de déchargement absent ou erroné (sur étiquette UM)",
+        "chapitre": "Chap H §2.5.2",
+        "code_amadeus": 122,
+        "points_controles": {
+          "Code Anomalie Amadeus": true,
+          "UM": true,
+          "UC": true,
+          "UMS": true,
+          "BL": true,
+          "AVIEXP": true
+        }
+      },
+      {
+        "categorie": "ETIQUETAGE",
+        "description": "Code produit absent sur etiquettes UC et UM Homogène",
+        "chapitre": "Chap H §2.5.2",
+        "code_amadeus": 122,
+        "points_controles": {
+          "Code Anomalie Amadeus": true,
+          "UM": true,
+          "UC": true,
+          "UMS": true,
+          "BL": true,
+          "AVIEXP": true
+        }
+      },
+      {
+        "categorie": "ETIQUETAGE",
+        "description": "Code vendeur absent ou erroné",
+        "chapitre": "Chap H §2.5.2",
+        "code_amadeus": 122,
+        "points_controles": {
+          "Code Anomalie Amadeus": true,
+          "UM": true,
+          "UC": true,
+          "UMS": true,
+          "BL": true,
+          "AVIEXP": true
+        }
+      },
+      {
+        "categorie": "ETIQUETAGE",
+        "description": "Quantité/UC absente ou erronée sur UC et UM Homogène",
+        "chapitre": "Chap H §2.5.2",
+        "code_amadeus": 122,
+        "points_controles": {
+          "Code Anomalie Amadeus": true,
+          "UM": true,
+          "UC": true,
+          "UMS": true,
+          "BL": true,
+          "AVIEXP": true
+        }
+      },
+      {
+        "categorie": "ETIQUETAGE",
+        "description": "Nombre de colis pleins absent ou erroné",
+        "chapitre": null,
+        "code_amadeus": 122,
+        "points_controles": {
+          "Code Anomalie Amadeus": true,
+          "UM": true,
+          "UC": true,
+          "UMS": true,
+          "BL": true,
+          "AVIEXP": true
+        }
+      },
+      {
+        "categorie": "ETIQUETAGE",
+        "description": "N° d'étiquette et indice d'étiquette absent ou erroné\n(indice : M/G/S)",
+        "chapitre": "Chap H §2.5.2",
+        "code_amadeus": 122,
+        "points_controles": {
+          "Code Anomalie Amadeus": true,
+          "UM": true,
+          "UC": true,
+          "UMS": true,
+          "BL": true,
+          "AVIEXP": true
+        }
+      },
+      {
+        "categorie": "ETIQUETAGE",
+        "description": "Poids absent ou erroné",
+        "chapitre": "Chap H §2.5.2",
+        "code_amadeus": 122,
+        "points_controles": {
+          "Code Anomalie Amadeus": true,
+          "UM": true,
+          "UC": true,
+          "UMS": true,
+          "BL": true,
+          "AVIEXP": true
+        }
+      },
+      {
+        "categorie": "ETIQUETAGE",
+        "description": "Date absente ou erronée / Date de péremption hors standard",
+        "chapitre": "Chap H §2.5.2",
+        "code_amadeus": 122,
+        "points_controles": {
+          "Code Anomalie Amadeus": true,
+          "UM": true,
+          "UC": true,
+          "UMS": true,
+          "BL": true,
+          "AVIEXP": true
+        }
+      },
+      {
+        "categorie": "ETIQUETAGE",
+        "description": "Code à barres illisible ou absent",
+        "chapitre": "Chap H §2.5.2",
+        "code_amadeus": 122,
+        "points_controles": {
+          "Code Anomalie Amadeus": true,
+          "UM": true,
+          "UC": true,
+          "UMS": true,
+          "BL": true,
+          "AVIEXP": true
+        }
+      },
+      {
+        "categorie": "ETIQUETAGE",
+        "description": "Etiquette complète de couleur",
+        "chapitre": "Chap H Annexe H-VII",
+        "code_amadeus": 126,
+        "points_controles": {
+          "Code Anomalie Amadeus": true,
+          "UM": true,
+          "UC": true,
+          "UMS": true,
+          "BL": true,
+          "AVIEXP": true
+        }
+      },
+      {
+        "categorie": "ETIQUETAGE",
+        "description": "Etiquette ne correspond pas à la pièce",
+        "chapitre": null,
+        "code_amadeus": 125,
+        "points_controles": {
+          "Code Anomalie Amadeus": true,
+          "UM": true,
+          "UC": true,
+          "UMS": true,
+          "BL": true,
+          "AVIEXP": true
+        }
+      },
+      {
+        "categorie": "Etiquetage Palette Homogène :",
+        "description": "- UM Homogène :  absence ou erreur code de routage sur l'UM si attendu",
+        "chapitre": "Chap H §2.5.2",
+        "code_amadeus": 122,
+        "points_controles": {
+          "Code Anomalie Amadeus": true,
+          "UM": true,
+          "UC": true,
+          "UMS": true,
+          "BL": true,
+          "AVIEXP": true
+        }
+      },
+      {
+        "categorie": "Etiquetage Palette Homogène :",
+        "description": "- UM Homogène :  absence ou erreur Point de destination sur l'UM si attendu",
+        "chapitre": "Chap H §2.5.2",
+        "code_amadeus": 122,
+        "points_controles": {
+          "Code Anomalie Amadeus": true,
+          "UM": true,
+          "UC": true,
+          "UMS": true,
+          "BL": true,
+          "AVIEXP": true
+        }
+      },
+      {
+        "categorie": "Etiquetage Palette Homogène :",
+        "description": "incohérence code routage et point de destination ",
+        "chapitre": null,
+        "code_amadeus": 126,
+        "points_controles": {
+          "Code Anomalie Amadeus": true,
+          "UM": true,
+          "UC": true,
+          "UMS": true,
+          "BL": true,
+          "AVIEXP": true
+        }
+      },
+      {
+        "categorie": "Etiquetage Palette Hétérogène",
+        "description": "- UM Hétérogène : Absence ou erreur code de routage sur l'UM",
+        "chapitre": "Chap H §2.5.2",
+        "code_amadeus": 122,
+        "points_controles": {
+          "Code Anomalie Amadeus": true,
+          "UM": true,
+          "UC": true,
+          "UMS": true,
+          "BL": true,
+          "AVIEXP": true
+        }
+      },
+      {
+        "categorie": "Etiquetage Palette Hétérogène",
+        "description": "- UM Hétérogène : Point de destination et/ou code produit et/ou quantité présent sur l'UM (Interdit)",
+        "chapitre": "Chap H §2.5.2",
+        "code_amadeus": 126,
+        "points_controles": {
+          "Code Anomalie Amadeus": true,
+          "UM": true,
+          "UC": true,
+          "UMS": true,
+          "BL": true,
+          "AVIEXP": true
+        }
+      },
+      {
+        "categorie": "Etiquetage Palette Hétérogène",
+        "description": "- UM Héterogène : Absence ou erreur de Code de routage et point de destination sur étiquette UC",
+        "chapitre": "Chap H §2.5.2",
+        "code_amadeus": 126,
+        "points_controles": {
+          "Code Anomalie Amadeus": true,
+          "UM": true,
+          "UC": true,
+          "UMS": true,
+          "BL": true,
+          "AVIEXP": true
+        }
+      },
+      {
+        "categorie": "PALETTISATION",
+        "description": "Type de Palette non-conforme (NIMP15)",
+        "chapitre": "Chap J §10",
+        "code_amadeus": 113,
+        "points_controles": {
+          "Code Anomalie Amadeus": true,
+          "UM": true,
+          "UC": true,
+          "UMS": true,
+          "BL": true,
+          "AVIEXP": true
+        }
+      },
+      {
+        "categorie": "PALETTISATION",
+        "description": "Palette non traitée (Gefbox)",
+        "chapitre": null,
+        "code_amadeus": 113,
+        "points_controles": {
+          "Code Anomalie Amadeus": true,
+          "UM": true,
+          "UC": true,
+          "UMS": true,
+          "BL": true,
+          "AVIEXP": true
+        }
+      },
+      {
+        "categorie": "PALETTISATION",
+        "description": "UCs non palettisé",
+        "chapitre": "Chap J §2.2",
+        "code_amadeus": 115,
+        "points_controles": {
+          "Code Anomalie Amadeus": true,
+          "UM": true,
+          "UC": true,
+          "UMS": true,
+          "BL": true,
+          "AVIEXP": true
+        }
+      },
+      {
+        "categorie": "PALETTISATION",
+        "description": "Mauvaise constitution palette (mélange d'UA différentes sur une même palette; non regroupement d'appel au colis sur une même palette,Nombre de bacs vides non optimisé…)",
+        "chapitre": "Chap J §1",
+        "code_amadeus": 113,
+        "points_controles": {
+          "Code Anomalie Amadeus": true,
+          "UM": true,
+          "UC": true,
+          "UMS": true,
+          "BL": true,
+          "AVIEXP": true
+        }
+      },
+      {
+        "categorie": "PALETTISATION",
+        "description": "Palette (avec bacs durables) filmée",
+        "chapitre": "Chap J §9",
+        "code_amadeus": 115,
+        "points_controles": {
+          "Code Anomalie Amadeus": true,
+          "UM": true,
+          "UC": true,
+          "UMS": true,
+          "BL": true,
+          "AVIEXP": true
+        }
+      },
+      {
+        "categorie": "PALETTISATION",
+        "description": "Cerclage non -conforme ou absent (cerlage avec boucle, mauvais côté de la palette, Absence 4 cerclages sur conditionnement cartons, ...)",
+        "chapitre": "Chap J §4",
+        "code_amadeus": 115,
+        "points_controles": {
+          "Code Anomalie Amadeus": true,
+          "UM": true,
+          "UC": true,
+          "UMS": true,
+          "BL": true,
+          "AVIEXP": true
+        }
+      },
+      {
+        "categorie": "PALETTISATION",
+        "description": "Manque coiffe (ou coiffe non conforme)",
+        "chapitre": null,
+        "code_amadeus": 114,
+        "points_controles": {
+          "Code Anomalie Amadeus": true,
+          "UM": true,
+          "UC": true,
+          "UMS": true,
+          "BL": true,
+          "AVIEXP": true
+        }
+      },
+      {
+        "categorie": "PALETTISATION",
+        "description": "Palette non gerbable et/ou non étanche (ex : manque boites vides pour les gefbox)",
+        "chapitre": "Chap J §2.2",
+        "code_amadeus": 116,
+        "points_controles": {
+          "Code Anomalie Amadeus": true,
+          "UM": true,
+          "UC": true,
+          "UMS": true,
+          "BL": true,
+          "AVIEXP": true
+        }
+      },
+      {
+        "categorie": "PALETTISATION",
+        "description": "Plusieurs Code routage sur une même palette",
+        "chapitre": "Chap J §1; Chap H §1.4",
+        "code_amadeus": 113,
+        "points_controles": {
+          "Code Anomalie Amadeus": true,
+          "UM": true,
+          "UC": true,
+          "UMS": true,
+          "BL": true,
+          "AVIEXP": true
+        }
+      },
+      {
+        "categorie": "PALETTISATION",
+        "description": "Plusieurs fournisseurs sur une même palette",
+        "chapitre": "Chap J §1",
+        "code_amadeus": 113,
+        "points_controles": {
+          "Code Anomalie Amadeus": true,
+          "UM": true,
+          "UC": true,
+          "UMS": true,
+          "BL": true,
+          "AVIEXP": true
+        }
+      },
+      {
+        "categorie": "PALETTISATION",
+        "description": "Point de dechargement différents sur une même palette",
+        "chapitre": "Chap J §1; Chap H §1.4",
+        "code_amadeus": 113,
+        "points_controles": {
+          "Code Anomalie Amadeus": true,
+          "UM": true,
+          "UC": true,
+          "UMS": true,
+          "BL": true,
+          "AVIEXP": true
+        }
+      },
+      {
+        "categorie": "EMBALLAGES",
+        "description": "Non-conformité type emballage",
+        "chapitre": "Chap I §2",
+        "code_amadeus": 112,
+        "points_controles": {
+          "Code Anomalie Amadeus": true,
+          "UM": true,
+          "UC": true,
+          "UMS": true,
+          "BL": true,
+          "AVIEXP": true
+        }
+      },
+      {
+        "categorie": "EMBALLAGES",
+        "description": "Mauvaise propreté UC / GV (saleté, agrafes, déchets, cassé; ...)",
+        "chapitre": "Chap I §3",
+        "code_amadeus": 111,
+        "points_controles": {
+          "Code Anomalie Amadeus": true,
+          "UM": true,
+          "UC": true,
+          "UMS": true,
+          "BL": true,
+          "AVIEXP": true
+        }
+      },
+      {
+        "categorie": "EMBALLAGES",
+        "description": "Emballages différents sur la palette (melange Gefbox et carton, …)",
+        "chapitre": null,
+        "code_amadeus": 113,
+        "points_controles": {
+          "Code Anomalie Amadeus": true,
+          "UM": true,
+          "UC": true,
+          "UMS": true,
+          "BL": true,
+          "AVIEXP": true
+        }
+      },
+      {
+        "categorie": "EMBALLAGES",
+        "description": "Sécurité/non-conformité des UC et GV (condi dangereux,…)",
+        "chapitre": "Chap J §2.2",
+        "code_amadeus": 115,
+        "points_controles": {
+          "Code Anomalie Amadeus": true,
+          "UM": true,
+          "UC": true,
+          "UMS": true,
+          "BL": true,
+          "AVIEXP": true
+        }
+      },
+      {
+        "categorie": "CHARGEMENT",
+        "description": "Erreur de séquencement synchrone",
+        "chapitre": null,
+        "code_amadeus": 137,
+        "points_controles": {
+          "Code Anomalie Amadeus": true,
+          "UM": true,
+          "UC": true,
+          "UMS": true,
+          "BL": true,
+          "AVIEXP": true
+        }
+      }
+    ]
+  }
+}
