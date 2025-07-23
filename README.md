@@ -1,55 +1,83 @@
-# SmartGrid
 
-SmartGrid is a full-stack web application to digitize the logistics audit grid for Stellantis. It features a Django REST API backend and a React (Vite + MUI) frontend, with multilingual support (French/Arabic), dynamic Excel-driven forms, and production-ready deployment configs.
+# SmartAudit
 
-## Features
-- Django backend with DRF, SQLite (dev), PostgreSQL (prod)
-- React frontend with Material UI, i18n (French/Arabic)
-- Dynamic audit grid from Excel (`grille_audit_stellantis.xlsx`)
-- User authentication (email/password)
+SmartAudit is a full-stack web application designed to manage and track audits and anomalies during logistics reception controls. It streamlines the process by allowing users to report issues, upload photos, and monitor performance, replacing manual tools like WhatsApp and Excel.
+
+## Project Architecture
+- **Backend:** Django REST API (`smartgrid_api`)
+- **Frontend:** React (Vite, Material UI) (`smartgrid-frontend`)
+- **Database:** SQLite for development, PostgreSQL for production
+- **Audit Grid Source:** Dynamic forms and logic driven by `grille_audit_stellantis.json` and `.xlsx`
+
+## Key Features
+- Report anomalies and audits with photo uploads
+- Secure archiving and traceability of all data
+- Export data to CSV
+- Multilingual support (French/Arabic)
+- KPI and performance tracking
 - Responsive, mobile-friendly UI
-- Ready for deployment: Railway/Render (backend), Vercel (frontend)
 
-## Local Development
+## Getting Started
 
-### Backend
-1. `cd smartgrid`
-2. Create a virtual environment and activate it:
-   - Windows: `python -m venv venv && .\venv\Scripts\activate`
-3. Install dependencies: `pip install -r requirements.txt`
-4. Run migrations: `python manage.py migrate`
-5. Start server: `python manage.py runserver`
+### Backend Setup
+1. Navigate to the backend folder:
+   ```sh
+   cd smartgrid
+   ```
+2. Create and activate a virtual environment:
+   ```sh
+   python -m venv .venv
+   .venv\Scripts\activate  # Windows
+   ```
+3. Install dependencies:
+   ```sh
+   pip install -r requirements.txt
+   ```
+4. Run migrations:
+   ```sh
+   python manage.py migrate
+   ```
+5. Start the development server:
+   ```sh
+   python manage.py runserver
+   ```
 
-### Frontend
-1. `cd smartgrid-frontend`
-2. Install dependencies: `npm install`
-3. Start dev server: `npm run dev`
+### Frontend Setup
+1. Navigate to the frontend folder:
+   ```sh
+   cd smartgrid-frontend
+   ```
+2. Install dependencies:
+   ```sh
+   npm install
+   ```
+3. Start the development server:
+   ```sh
+   npm run dev
+   ```
 
-## Deployment
-- Backend: Deploy to Railway or Render (see `smartgrid_api` docs)
-- Frontend: Deploy to Vercel (see `smartgrid-frontend` docs)
+## Deployment Guide
 
-## Environment Variables
-See `.env.example` in both backend and frontend folders for required variables.
-  - Railway/Render: Set environment variables from `.env.production.example` in the dashboard.
-  - Vercel: Set `VITE_API_URL` in the dashboard to your backend API URL.
-
-## Deployment Steps
-
-### Backend (Railway/Render)
-1. Push your code to GitHub.
-2. Create a new project on Railway or Render, link your repo.
-3. Set environment variables from `.env.production.example`.
-4. Add a PostgreSQL database (Railway/Render provides this) and update `DATABASE_URL`.
+### Backend (Render/Railway)
+1. Push your backend code to GitHub.
+2. Create a new project on Render or Railway and link your repository.
+3. Set environment variables as needed (see `.env.example`).
+4. Add a PostgreSQL database and update your `DATABASE_URL`.
 5. Deploy and run migrations:
-   - Railway: Use the web shell or CI to run `python manage.py migrate`.
-6. Upload `grille_audit_stellantis.xlsx` to the root of your deployed backend.
+   ```sh
+   python manage.py migrate
+   ```
+6. Upload `grille_audit_stellantis.json` or `.xlsx` to the backend root if required.
 
-### Frontend (Vercel)
+### Frontend (Vercel/Netlify)
 1. Push your frontend code to GitHub.
-2. Create a new project on Vercel, link your repo.
+2. Create a new project on Vercel or Netlify and link your repository.
 3. Set `VITE_API_URL` to your backend API endpoint.
 4. Deploy.
+
+## Environment Variables
+- Backend: See `.env.example` for required variables.
+- Frontend: Set `VITE_API_URL` to your backend API URL.
 
 ## Demo URLs
 - Frontend: https://smartgrid.vercel.app
